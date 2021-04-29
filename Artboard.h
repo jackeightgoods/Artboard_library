@@ -77,8 +77,8 @@ int pot(int pin);
 
 
     /**
-    * @param  int midi note from 12 to 108 (A0-B9)
-    * @return floatfrequency in Hz
+    * @param  int midi not, usually from 0 to 127 (A0-G8)
+    * @return float frequency in Hz
     **/
 
     float midiToFreq(int midiValue);

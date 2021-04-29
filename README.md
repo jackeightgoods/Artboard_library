@@ -56,4 +56,10 @@ constructor artboard();
 
  artboard.pot(0-7);
 
+ ### **audio function**
 
+ artboard.midiToFreq(0-127)
+
+ ```
+convert number of midi to Hz of note
+ ```

@@ -191,6 +191,17 @@ void Artboard::write(int channel, int value){
 	digitalWrite(signalPin, value);
 }
 
+/**
+* @public
+*
+**/
+float Artboard::midiToFreq( int midiValue){
+	float molt=pow(1.059463,midiValue);
+	float hz = molt *8.175798915643707;
+	return hz;
+
+
+}
 
 /**
 * @private

@@ -75,8 +75,18 @@ int pot(int pin);
     void write(int channel, int value);
 
 
+
+    /**
+    * @param  int midi note from 12 to 108 (A0-B9)
+    * @return floatfrequency in Hz
+    **/
+
+    float midiToFreq(int midiValue);
+
+
   protected:
     // moving avg data
+
   int readings[10];
   int readIndex  = 0;
   long total  = 0;
@@ -91,6 +101,7 @@ int pot(int pin);
 	int lastIO;
 	int currentChannel;
   int currentChannelB;
+
 
 	void setChannel(int channel);
 
